@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My E-Commerce</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+            <div class="cart-icon" id="cart-icon">🛒 <span id="cart-count">0</span></div>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to My E-Commerce</h2>
+        <p>Your one-stop shop for all your needs!</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <div id="product-list">
+            <!-- Product items will be displayed here by script.js -->
+        </div>
+    </section>
+
+    <section id="cart">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="clearSelected()">Clear Selected</button>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our e-commerce store. We offer a wide range of products...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@ecommerce.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li>Q: How do I place an order? A: Select a product and add it to your cart...</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My E-Commerce</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
